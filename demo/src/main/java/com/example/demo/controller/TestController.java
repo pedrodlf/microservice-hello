@@ -17,7 +17,7 @@ public class TestController {
 	
 	@GetMapping("hello")
 	public ResponseEntity<String> hello(){
-		log.info("Request SessionID: {}"+RequestContextHolder.currentRequestAttributes().getSessionId());
+		log.info("Request SessionID : {}"+RequestContextHolder.currentRequestAttributes().getSessionId());
 		return new ResponseEntity<String>("Hello People",HttpStatus.OK);
 	}
 	
